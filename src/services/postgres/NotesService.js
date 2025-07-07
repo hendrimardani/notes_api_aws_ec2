@@ -38,7 +38,7 @@ class NotesService {
       values: [id],
     };
     const result = await this._pool.query(query);
- 
+
     if (!result.rows.length) {
       throw new NotFoundError('Catatan tidak ditemukan');
     }
@@ -64,7 +64,6 @@ class NotesService {
       text: 'DELETE FROM notes WHERE id = $1 RETURNING id',
       values: [id],
     };
- 
     const result = await this._pool.query(query);
 
     if (!result.rows.length) {
