@@ -19,7 +19,7 @@ class NotesHandler {
       status: 'success',
       message: 'Catatan berhasil ditambahkan',
       data: {
-        note: {
+        noteId: {
           id,
         }
       },
