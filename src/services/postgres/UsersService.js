@@ -63,7 +63,7 @@ class UsersService {
 
     if (!result.rows.length) {
       throw new AuthenticationsError('Kredensial yang Anda berikan salah');
-    }
+    } 
 
     // buat variabel baru dengan nama hashedPassword
     const { id, password: hashedPassword } = result.rows[0];
